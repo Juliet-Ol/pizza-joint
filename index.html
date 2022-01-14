@@ -43,7 +43,11 @@
 
 
 <!-- About us section -->
-<div class="container about us">
+<section class="About us" id="About">
+
+  <h2>About us</h2>
+    <div class="content">
+
     <p>
         We pride ourselves in having the best pizza in town. Our cheese and toppings are sourced locally from organically bred animals and grown plants. <br> 
         Our pizza are always of the exact same quality, because we have top trained chefs and everything is weighed. <br>
@@ -51,8 +55,46 @@
         Every single feedback is taken seriously.
     </p> 
 </div> 
+</section>
+<!-- menu -->
+
+<div class="img">
+  <h2>Menu</h2>
+  <div class="row">
+    <div class="col-md-3">
+
+  <img src="images/Hawaian pizza.jpg" class="img-thumbnail" alt="..." >
+
+</div>
+
+<div class="col-md-3">
+
+  <img src="images/Bbq steak.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+
+</div>
+ 
+<div class="col-md-3">
+  <img src="images/chicken.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+</div>
+
+<div class="col-md-3"> 
+  <img src="images/Veg pizza.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+
+</div> 
+
+</div>
+</div>
+
+
+
+
+
+
 
 <!--order section for delivery  -->
+
+<div class="container">
+  <h2>Place your order</h2>
 
 <form class="row g-3 needs-validation" novalidate>
     <div class="col-md-4">
@@ -69,16 +111,7 @@
         Looks good!
       </div>
     </div>
-    <div class="col-md-4">
-      <label for="validationCustomUsername" class="form-label">Username</label>
-      <div class="input-group has-validation">
-        <span class="input-group-text" id="inputGroupPrepend">@</span>
-        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-        <div class="invalid-feedback">
-          Please choose a username.
-        </div>
-      </div>
-    </div>
+   
     
     <div class="col-md-3">
       <label for="validationCustom04" class="form-label"></label>
@@ -101,7 +134,68 @@
         <option>Starehe</option>
         <option>Mathare</option>
       </select>
-     
+    
+    <div class="invalid-feedback">
+      Please select a valid Constituency.
+    </div>
+
+</div>
+<div class="col-md-3">
+  <label for="house_number" class="form-label"  required></label>
+  <input type="text" class="form-control"  placeholder="house number" required>
+  
+</div>
+
+      <div class="col-md-3">
+                        
+
+        <label for="number"></label> 
+        <input type="number" id="day" placeholder="quantity" required> <br>
+     </div>
+
+      <div class="col-md-5">
+        <label for="validationCustom04" class="form-label"></label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="pizza size">pizza size</option>
+          <option>small</option>
+          <option>medium</option>
+          <option>large</option>
+          
+        </select>
+
+        <div class="col-md-5">
+            <label for="validationCustom04" class="form-label"></label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="flavour">flavour</option>
+              <option>Hawaian</option>
+              <option>Barbeque steak</option>
+              <option>Chicken</option>
+              <option>Vegetable</option>
+              
+            </select> 
+
+            <div class="col-md-5">
+                <label for="validationCustom04" class="form-label"></label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="crust">crust</option>
+                  <option>gluten free</option>
+                  <option>crispy</option>
+                  <option>stuffed</option>
+                  
+                </select>     
+
+                <div class="col-md-5">
+                    <label for="validationCustom04" class="form-label"></label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="extra toppings">extra toppings</option>
+                      <option>Cheese</option>
+                      <option>Bacon</option>
+                      <option>Sausage</option>
+                      <option>Beef</option>
+                      <option>Vegetable</option>
+                      
+                    </select>            
+
     
         </div>
       </div>
@@ -110,6 +204,7 @@
       <button class="btn btn-primary" type="submit">Submit order</button>
     </div>
   </form>
+</div>
 
 
 
