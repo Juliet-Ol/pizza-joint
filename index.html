@@ -37,8 +37,9 @@
 
  <!-- main image -->
 
-    <div class="image main">
-        <img src="images/mainpizza.jpg" alt="main pizza">
+    <div class="image">
+
+        <img class="main" src="images/mainpizza.jpg" alt="main pizza">
     </div>
 
 
@@ -96,24 +97,23 @@
 <div class="container">
   <h2>Place your order</h2>
 
-<form class="row g-3 needs-validation" novalidate>
+<form class="row  needs-validation" novalidate>
+  
     <div class="col-md-4">
-      <label for="validationCustom01" class="form-label" Placeholder="First name ..."></label>
-      <input type="text" class="form-control" id="validationCustom01" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+     
+  <label for="first_name" class="form-label"  required></label>
+  <input type="text" class="form-control"  placeholder="First name.." required>
+  
+      
     </div>
     <div class="col-md-4">
-      <label for="validationCustom02" class="form-label"></label>
-      <input type="text" class="form-control" id="validationCustom02" value="Enter last name" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+      <label for="Last_name" class="form-label"  required></label>
+    <input type="text" class="form-control"  placeholder="Last name.." required>
+
     </div>
    
     
-    <div class="col-md-3">
+    <div class="col-md-4">
       <label for="validationCustom04" class="form-label"></label>
       <select class="form-select" id="validationCustom04" required>
         <option selected disabled value="">Constituency</option>
@@ -140,20 +140,24 @@
     </div>
 
 </div>
-<div class="col-md-3">
+
+<div class="col-md-4">
   <label for="house_number" class="form-label"  required></label>
   <input type="text" class="form-control"  placeholder="house number" required>
   
 </div>
 
-      <div class="col-md-3">
+
+<div class="row">
+
+      <div class="col-md-4">
                         
 
-        <label for="number"></label> 
+        <label for="quantity" class="form-label"  required></label>
         <input type="number" id="day" placeholder="quantity" required> <br>
      </div>
 
-      <div class="col-md-5">
+      <div class="col-md-4">
         <label for="validationCustom04" class="form-label"></label>
         <select class="form-select" id="validationCustom04" required>
           <option selected disabled value="pizza size">pizza size</option>
@@ -163,7 +167,7 @@
           
         </select>
 
-        <div class="col-md-5">
+        <div class="col-md-4">
             <label for="validationCustom04" class="form-label"></label>
             <select class="form-select" id="validationCustom04" required>
               <option selected disabled value="flavour">flavour</option>
@@ -174,7 +178,7 @@
               
             </select> 
 
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <label for="validationCustom04" class="form-label"></label>
                 <select class="form-select" id="validationCustom04" required>
                   <option selected disabled value="crust">crust</option>
@@ -184,8 +188,8 @@
                   
                 </select>     
 
-                <div class="col-md-5">
-                    <label for="validationCustom04" class="form-label"></label>
+                <div class="col-md-4">
+                    <label for="toppings" class="form-label"></label>
                     <select class="form-select" id="validationCustom04" required>
                       <option selected disabled value="extra toppings">extra toppings</option>
                       <option>Cheese</option>
@@ -198,6 +202,8 @@
 
     
         </div>
+
+      </div>        
       </div>
     </div>
     <div class="col-12">
