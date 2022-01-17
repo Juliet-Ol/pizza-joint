@@ -38,13 +38,12 @@
 
  <!-- main image -->
 
- <div id="home"></div>
-
- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
- <div class="carousel-indicators">
-   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+ <div id="home">
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
  </div>
  <div class="carousel-inner">
    <div class="carousel-item active">
@@ -67,6 +66,7 @@
  </button>
 </div>
 </div>
+</div>
 
 <!-- About us section -->
 
@@ -74,59 +74,52 @@
   <h2>About us</h2>
     <div class="content">
 
-    <p>
+      <p>
         We pride ourselves in having the best pizza in town. Our cheese and toppings are sourced locally from organically bred animals and grown plants. <br> 
         Our pizza are always of the exact same quality, because we have top trained chefs and everything is weighed. <br>
         We do not compromize on Customer Experience and all our staff are trained on customer service. <br> 
         Every single feedback is taken seriously.
-    </p> 
-</div> 
+      </p> 
+    </div> 
 </div>
 
 <!-- menu -->
 
 <div class="img" id="menu">
   <h2>Menu</h2>
-
-  <div class="row" class=size>
+    <div class="row" class=size> 
+      <div class="col-md-3 ">
+        <img   src="images/size.jpg" class="img-thumbnail" alt=""> 
     
-
-  <div class="col-md-3 ">
-
-    <img   src="images/size.jpg" class="img-thumbnail" alt=""> 
-    
-  </div>
-
-  </div> 
+      </div>
+    </div> 
 
   
-  
+<div class="container container-fluid">
   <div class="row">
     <div class="col-md-3">
+      <img class="Hawaiian" src="images/Hawaian pizza.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+        <div class="card-body">
+          <h5 class="card-title">Hawaiian Pizza</h5>
+            <p class="card-text">Our hawaiian pizza is made of pineapple, cheese and ham toppings. </p>
+          
+        </div>
+    </div>
+  
+    <div class="col-md-3">  
+      <img class="Bbq" src="images/Bbq steak.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+    </div>
+  
+    <div class="col-md-3">
+      <img class="chicken" src="images/chicken.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+    </div>
 
-  <img class="Hawaiian" src="images/Hawaian pizza.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+    <div class="col-md-3"> 
+      <img class="veg" src="images/Veg pizza.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
+    </div> 
 
+  </div>
 </div>
-
-<div class="col-md-3">
-
-  <img class="Bbq" src="images/Bbq steak.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
-
-</div>
- 
-<div class="col-md-3">
-  <img class="chicken" src="images/chicken.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
-</div>
-
-<div class="col-md-3"> 
-  <img class="veg" src="images/Veg pizza.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
-
-</div> 
-
-</div>
-</div>
-
-
 
 
 
@@ -136,44 +129,40 @@
 
 <div class="container" id="order">
   <h2>Place your order</h2>
-
-<form class="row  needs-validation" novalidate>
+    <form class="row  needs-validation" novalidate>
   
-    <div class="col-md-4">
-     
-  <label for="first_name" class="form-label"  required></label>
-  <input type="text" class="form-control"  placeholder="First name.." required>
-  
-      
-    </div>
-    <div class="col-md-4">
-      <label for="Last_name" class="form-label"  required></label>
-    <input type="text" class="form-control"  placeholder="Last name.." required>
+      <div class="col-md-4">     
+        <label for="first_name" class="form-label"  required></label>
+          <input type="text" class="form-control"  placeholder="First name.." required> 
+      </div>
 
-    </div>
-   
+      <div class="col-md-4">
+        <label for="Last_name" class="form-label"  required></label>
+          <input type="text" class="form-control"  placeholder="Last name.." required>
+      </div>
+    
     
     <div class="col-md-4">
       <label for="validationCustom04" class="form-label"></label>
-      <select class="form-select" id="validationCustom04" required>
-        <option selected disabled value="">Constituency</option>
-        <option>Westlands</option>
-        <option>Dagoretti North</option>
-        <option>Dagoretti South</option>
-        <option>Langata</option>
-        <option>Kibra</option>
-        <option>Roysambu</option>
-        <option>Kasarani</option>
-        <option>Embakasi South</option>
-        <option>Embakasi North</option>
-        <option>Embakasi Central</option>
-        <option>Embakasi East</option>
-        <option>Embakasi West</option>
-        <option>Makadara</option>
-        <option>Kamkunji</option>
-        <option>Starehe</option>
-        <option>Mathare</option>
-      </select>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Constituency</option>
+          <option>Westlands</option>
+          <option>Dagoretti North</option>
+          <option>Dagoretti South</option>
+          <option>Langata</option>
+          <option>Kibra</option>
+          <option>Roysambu</option>
+          <option>Kasarani</option>
+          <option>Embakasi South</option>
+          <option>Embakasi North</option>
+          <option>Embakasi Central</option>
+          <option>Embakasi East</option>
+          <option>Embakasi West</option>
+          <option>Makadara</option>
+          <option>Kamkunji</option>
+          <option>Starehe</option>
+          <option>Mathare</option>
+        </select>
     
     <div class="invalid-feedback">
       Please select a valid Constituency.
@@ -183,109 +172,85 @@
 
 <div class="col-md-4">
   <label for="house_number" class="form-label"  required></label>
-  <input type="text" class="form-control"  placeholder="house number" required>
-  
+    <input type="text" class="form-control"  placeholder="house number" required>  
 </div>
 
 
 <div class="row">
 
-      <div class="col-md-4">
-                        
+  <div class="col-md-4">
+    <label for="quantity" class="form-label"  required></label>
+      <input type="number" class="form-control" placeholder="quantity" required> <br>
+  </div>
 
-        <label for="quantity" class="form-label"  required></label>
-        <input type="number" class="form-control" placeholder="quantity" required> <br>
-     </div>
-
-      <div class="col-md-4">
-        <label for="validationCustom04" class="form-label"></label>
-        <select class="form-select" id="validationCustom04" required>
-          <option selected disabled value="pizza size">pizza size</option>
-          <option>small</option>
-          <option>medium</option>
-          <option>large</option>
+  <div class="col-md-4">
+    <label for="validationCustom04" class="form-label"></label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="pizza size">pizza size</option>
+        <option>small</option>
+        <option>medium</option>
+        <option>large</option>
           
-        </select>
-        </div>
+      </select>
+  </div>
 
-        <div class="col-md-4">
-            <label for="validationCustom04" class="form-label"></label>
-            <select class="form-select" id="validationCustom04" required>
-              <option selected disabled value="flavour">flavour</option>
-              <option>Hawaian</option>
-              <option>Barbeque steak</option>
-              <option>Chicken</option>
-              <option>Vegetable</option>
-              
-            </select> 
+  <div class="col-md-4">
+    <label for="validationCustom04" class="form-label"></label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="flavour">flavour</option>
+        <option>Hawaian</option>
+        <option>Barbeque steak</option>
+        <option>Chicken</option>
+        <option>Vegetable</option>              
+      </select> 
+  </div>  
 
-          </div>  
+<div class="row">
 
-          </div>
+  <div class="col-md-4">
+    <label for="validationCustom04" class="form-label"></label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="crust">crust</option>
+        <option>gluten free</option>
+        <option>crispy</option>
+        <option>stuffed</option>           
+      </select>   
+  </div>    
 
-            <div class="row">
-
-            <div class="col-md-4">
-                <label for="validationCustom04" class="form-label"></label>
-                <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="crust">crust</option>
-                  <option>gluten free</option>
-                  <option>crispy</option>
-                  <option>stuffed</option>
-                  
-                </select>   
-              </div>    
-
-                <div class="col-md-4">
-                    <label for="toppings" class="form-label"></label>
-                    <select class="form-select" id="validationCustom04" required>
-                      <option selected disabled value="extra toppings">extra toppings</option>
-                      <option>Cheese</option>
-                      <option>Bacon</option>
-                      <option>Sausage</option>
-                      <option>Beef</option>
-                      <option>Vegetable</option>
-                      
-                    </select>   
-                
-                  </div>
-          </div>              
+  <div class="col-md-4">
+    <label for="toppings" class="form-label"></label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="extra toppings">extra toppings</option>
+        <option>Cheese</option>
+        <option>Bacon</option>
+        <option>Sausage</option>
+        <option>Beef</option>
+        <option>Vegetable</option>
+      </select>   
+  </div>
+</div>              
              
     
-      
-
-            
-      
-    
-
-
     <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit order</button>
+          <button class="btn btn-primary" type="submit">Submit order</button>
     </div>
   </form>
 </div>
 
 
 
-
 <!-- contact us -->
 
- <div class="card text-center" id="contact">
-    <div class="card-header">
-        
-    </div>
-    <div class="card-body">
-         
-      
-    </div>
-    <div class="card-footer text-muted">
-        <h3>Contact us</h3>
-        <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>         
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a> 
-    </div>
+<div class="card text-center" id="contact">
+  
+  <div class="card-footer text-muted">
+    <h3>Contact us</h3>
+      <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>         
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a> 
   </div>
+</div>
 
 
     
