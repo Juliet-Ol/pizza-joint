@@ -55,7 +55,7 @@ function totalCost(size, crust, toppings, flavour, quantity, delivery){
     let cheese = { name: "cheese", price: 80 };
     let bacon = { name: "bacon", price: 50 };
     let sausage = { name: "sausage", price: 50 };
-    let bacon = { name: "beef", price: 50 };
+    let beef = { name: "beef", price: 50 };
     let sausage = { name: "chicken", price: 50 };
 
 
