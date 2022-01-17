@@ -1,4 +1,4 @@
-**Delani Studio**
+**JOINT DE PIZZA**
 
 **By Juliet Agutu Oluoch January 2022
 
