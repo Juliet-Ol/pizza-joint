@@ -1,18 +1,5 @@
 
 
-function Cost (size, crust, toppings, flavour, quantity, delivery){
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.flavour = flavour;
-    this.quantity = quantity;
-    this.delivery = delivery
-        
-  
-
-}
-
-
 // getting pizza total cost
 
     var size = document.getElementById
@@ -24,3 +11,18 @@ function Cost (size, crust, toppings, flavour, quantity, delivery){
     
 
     // pizza size
+
+    if (size.checked == small) {
+        var size;
+        switch(bei){
+            case 0:
+                size = "small";
+                break
+            case 1:
+                size = "medium";
+                break
+            case 2:
+                size = "large";
+                break        
+        }
+    }
