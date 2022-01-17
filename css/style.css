@@ -20,7 +20,7 @@
     
 }
 
-h1, h2{
+h1, h2, h5{
     text-align: center;    
 
 }
@@ -84,7 +84,57 @@ nav ul li .active{
     color: #c0d96f;
 }
 
+#size {
+    align-items: center;
+    background-color: burlywood;
+    padding: 6px;
 
+
+}
+
+
+portfolio {
+
+    white-space: nowrap;
+    margin-left: 200px;
+    margin-right: 100px;
+    backface-visibility: visible;
+    transition: .5 ease;
+    display: block;
+    position: relative;
+  
+    
+    }  
+  
+     
+  
+    .image_ima{
+      display: block;
+      /* width: 100%; */
+      white-space: nowrap;
+      position: relative;
+      margin-top: 3px;
+    }
+  
+    .image_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background: rgba(0, 0, 0, 0.234);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition-duration: 0.25s;
+    }
+  
+  
+    .image_ima:hover .image_overlay{
+      opacity: 1;
+    }
 
 
 
