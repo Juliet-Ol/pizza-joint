@@ -33,7 +33,6 @@
       </ul> 
     </div>
       
- </nav>
 </div> 
 
  <!-- main image -->
@@ -85,24 +84,25 @@
 
 <!-- menu -->
 
-<div class="img" id="menu">
-  <h2>Menu</h2>
-    <div class="row" class=size> 
-      <div class="col-md-3 ">
-        <img   src="images/size.jpg" class="img-thumbnail" alt=""> 
-    
-      </div>
-    </div> 
+<div class="row">
+  <div class="card" id="size">  
+   
+    <div class="col-md-3 " id="size">
+      <img src="images/size.jpg" class="img-thumbnail" alt="">         
+        <div class="card-body">
+          <h5 class="card-title">PIZZA SIZES</h5>
+            <p class="card-text">Small = kes 800<br> Medium = kes 1,000<br> Large = kes 1,200 
+        </div>    
+    </div>
+  </div> 
+</div>
 
   
 <div class="container container-fluid">
   <div class="row">
     <div class="col-md-3">
       <img class="Hawaiian" src="images/Hawaian pizza.jpg" class="img-thumbnail" alt="..." height="200px" width="200px">
-        <div class="card-body">
-          <h5 class="card-title">Hawaiian Pizza</h5>
-            <p class="card-text">Our hawaiian pizza is made of pineapple, cheese and ham toppings. </p>
-          
+        <div class="card-body">          
         </div>
     </div>
   
@@ -120,10 +120,6 @@
 
   </div>
 </div>
-
-
-
-
 
 <!--order section for delivery  -->
 
@@ -232,7 +228,7 @@
              
     
     <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit order</button>
+          <button class="btn btn-primary" id="order" click="myFunction" type="submit">Submit order</button>
     </div>
   </form>
 </div>
